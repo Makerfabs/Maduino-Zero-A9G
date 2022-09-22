@@ -89,8 +89,9 @@ void setup()
     sendData("AT+CCID", 3000, DEBUG);  //get SIM 
     sendData("AT+CREG?", 3000, DEBUG);
     sendData("AT+CGATT=1", 1000, DEBUG);
-    sendData("AT+CGACT=1,1", 1000, DEBUG);
+    
     sendData("AT+CGDCONT=1,\"IP\",\"CMNET\"", 1000, DEBUG);
+    sendData("AT+CGACT=1,1", 1000, DEBUG);
 
     sendData("AT+CSQ", 1000, DEBUG);  //
     //sendData("AT+CIPSTART=\"TCP\",\"www.makerfabs.com\",80", 2000, DEBUG);//
